@@ -62,7 +62,7 @@
   </div>
   <div class="navbar navbar-dark bg-dark shadow-sm">
     <div class="container d-flex justify-content-between">
-      <a href="#" class="navbar-brand d-flex align-items-center">
+      <a href="index.html" class="navbar-brand d-flex align-items-center">
          <strong><i class="fas fa-church fa-2x"></i> Paris Church Of St. Peter & St. Paul Chipping Warden</strong>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
@@ -109,110 +109,19 @@ var x = setInterval(function() {
   }
 }, 1000);
 </script>
-      <p class="lead text-muted">This year because of the Coronavirus Pandemic, none of the fund-raising events usually held in the Village have taken place.<br> Therefore, to help provide some funds for the Parish Church, Sports Club and School & Kindergarten we are organising a Grand Draw, with the profits split equally between the three organisations.</p>
-      <p>Prize Draw Bank Holiday Monday, 31st August, 2020<br>2pm in the Parish Church</p>
-      <p>
-        <!-- Load Stripe.js on your website. -->
-<script src="https://js.stripe.com/v3"></script>
-
-<!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
-<button
-  class="btn btn-primary my-2"
-  id="checkout-button-price_HKcSx0E0LApeez"
-  role="link"
->
-<i class="far fa-credit-card"></i> Buy Tickets with Card
-</button>
-
-<div id="error-message"></div>
-
-<script>
-(function() {
-  var stripe = Stripe('pk_test_MHlARpwtgFgwZgsqnkbTVjlG00GIMHbldq');
-
-  var checkoutButton = document.getElementById('checkout-button-price_HKcSx0E0LApeez');
-  checkoutButton.addEventListener('click', function () {
-    // When the customer clicks on the button, redirect
-    // them to Checkout.
-    stripe.redirectToCheckout({
-      lineItems: [{price: 'price_HKcSx0E0LApeez', quantity: 1}],
-      mode: 'payment',
-      // Do not rely on the redirect to the successUrl for fulfilling
-      // purchases, customers may not always reach the success_url after
-      // a successful payment.
-      // Instead use one of the strategies described in
-      // https://stripe.com/docs/payments/checkout/fulfillment
-      successUrl: 'https://your-website.com/success',
-      cancelUrl: 'https://your-website.com/canceled',
-    })
-    .then(function (result) {
-      if (result.error) {
-        // If `redirectToCheckout` fails due to a browser or network
-        // error, display the localized error message to your customer.
-        var displayError = document.getElementById('error-message');
-        displayError.textContent = result.error.message;
-      }
-    });
-  });
-})();
-</script>
-        <a href="banktransfer.html" class="btn btn-secondary my-2"><i class="fas fa-exchange-alt"></i> Buy Tickets with Bank Transfer</a>
-
-
+      <p class="lead text-muted">Thank You<br>
+        Please log into your online bank account and make the payment for the number of tickets you have bought to:<br>
+        Chipping Warden PCC<br>
+        A/c No: 00066824<br>
+        Sort code: 30-90-42<br>
+        Quote surname as reference
       </p>
+
+      <p class="lead text-muted">Tickets will be sent to you by email after the payment has been received and processed. If you do not receive the tickets within 5 days please phone 01295 660661</p>
     </div>
   </section>
 
-  <div class="album py-5 bg-light">
-    <div class="container">
-
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <img src="img/wheelbarrow.jpg">
-            <div class="card-body">
-              <p class="card-text">Wheelbarrow for Illustrative purposes only, contents may vary, guaranteed minimum value of £400 plus the wheelbarrow.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <i class="fas fa-trophy fa-2x"></i>
-                </div>
-                <small class="text-muted">First Prize</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <img src="img/100pounds.jpg">
-            <div class="card-body">
-              <p class="card-text">The second prize is £100 in cash.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-<i class="fas fa-award fa-2x"></i>
-                </div>
-                <small class="text-muted">Second Prize</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <img src="img/50pounds.jpg">
-            <div class="card-body">
-              <p class="card-text">Third prize is £50 in cash.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-<i class="fas fa-money-bill fa-2x"></i>
-                </div>
-                <small class="text-muted">Third Prize</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        
-    </div>
-  </div>
+  
 
 </main>
 

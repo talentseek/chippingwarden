@@ -31,3 +31,9 @@ footer {
 footer p {
   margin-bottom: .25rem;
 }
+
+#demo {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 0px;
+}
